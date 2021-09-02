@@ -8,6 +8,7 @@ import PrivateRoute from './PrivateRoutes';
 
 import Login from '../pages/Login';
 import Dashboard from '../pages/Dashboard';
+import trabalhe from '../pages/TrabalheConosco';
 
 export default function Routes(){
     return(
@@ -15,6 +16,7 @@ export default function Routes(){
             <Switch>
                 <Route path="/" exact component={Login} />
                 <PrivateRoute path="/dashboard" component={Dashboard} />
+                <PrivateRoute path="/trabalhe" component={trabalhe} />
             </Switch>
         </BrowserRouter>
     )
